@@ -1,6 +1,6 @@
 {
     "name": "kfoobar/laravel-sitemap",
-    "description": "Package to generate sitemaps",
+    "description": "A Laravel package for generating sitemaps",
     "type": "library",
     "license": "MIT",
     "require": {
