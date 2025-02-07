@@ -1,0 +1,42 @@
+{
+    "name": "kfoobar/laravel-sitemap",
+    "description": "Package to generate sitemaps",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/config": ">=7.0",
+        "illuminate/support": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "KFoobar\\Sitemap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KFoobar\\Sitemap\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KFoobar\\Sitemap\\SitemapServiceProvider"
+            ],
+            "aliases": {
+                "Sitemap": "KFoobar\\Sitemap\\Facades\\Sitemap"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "David Villa",
+            "email": "david@kfoobar.se"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
